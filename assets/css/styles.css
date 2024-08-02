@@ -23,7 +23,7 @@
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   font-family: 'Work Sans', sans-serif;
   font-size: var(--body-font-size);
   line-height: 1.5;
@@ -70,7 +70,7 @@ h2 {
 }
 
 h2:hover {
-  color: var(--dark-purple);
+  color: var(--grayish-purple);
   scale: 1.05;
   transition: 0.2s ease-in;
 }
