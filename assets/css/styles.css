@@ -24,7 +24,7 @@ body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
 }
 
 body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
@@ -47,14 +47,14 @@ input, button, textarea, select { font: inherit; }
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
 }
 
 /* Body */
 .background-header-img {
   background-image: url(../images/background-pattern-mobile.svg);
-  min-height: 250px;
+  min-height: 25vh;
   min-width: 100vw;
 }
 
@@ -108,4 +108,29 @@ p {
   font-size: 14px;
   margin-bottom: 1rem;
   color: var(--grayish-purple);
+}
+
+
+@media screen and (min-width: 768px) {
+  .background-header-img {
+    background-image: url(../images/background-pattern-desktop.svg);
+    min-height: 350px;
+    min-width: 100vw;
+  }
+  
+  .wrapper {
+    min-width: 500px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
