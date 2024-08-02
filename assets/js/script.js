@@ -1,12 +1,16 @@
-
-const icon = document.getElementById('icon');
-
-// Add a click event listener to the image
-icon.addEventListener('click', function() {
-    // Check the current source and toggle it
-    if (icon.src.includes('icon-plus.svg')) {
-        icon.src = '../assets/images/icon-minus.svg';
-    } else {
-        icon.src = '../assets/images/icon-plus.svg';
-    }
-});
+document.addEventListener('DOMContentLoaded', () => {
+    const details = document.querySelectorAll('details');
+  
+    details.forEach(detail => {
+      const summary = detail.querySelector('summary');
+      const icon = summary.querySelector('.icon-toggle');
+  
+      detail.addEventListener('toggle', () => {
+        if (detail.open) {
+          icon.src = './assets/images/icon-minus.svg';
+        } else {
+          icon.src = './assets/images/icon-plus.svg';
+        }
+      });
+    });
+  });
