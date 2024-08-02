@@ -8,8 +8,11 @@
 </head>
 <body>
     <main class="container">
+      <div class="background-header-img" aria-hidden="true"></div>
+
+      <div class="wrapper">
+        
         <header class="header">
-            <div class="background-header-img" aria-hidden="true"></div>
             <div class="title">
                 <img src="./assets/images/icon-star.svg" alt="Star icon" width="24" height="24">
                 <h1>FAQs</h1>
@@ -20,7 +23,7 @@
             <details class="question-card">
                 <summary class="question-title">
                     <h2>What is Frontend Mentor, and how will it help me?</h2>
-                    <img src="./assets/images/icon-plus.svg" alt="Expand" class="icon-toggle" width="20" height="20">
+                    <img src="./assets/images/icon-plus.svg" alt="Expand" class="icon-toggle" width="20" height="20" id="icon" onclick="changeImage()">
                 </summary>
                 <p>Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.</p>
             </details>
@@ -43,12 +46,13 @@
 
             <details class="question-card">
                 <summary class="question-title">
-                    <h2>How can I get help if I'm stuck on a Frontend Mentor challenge?</h2>
+                    <h2>How can I get help if I'm stuck on a Frontend  challenge?</h2>
                     <img src="./assets/images/icon-plus.svg" alt="Expand" class="icon-toggle" width="20" height="20">
                 </summary>
                 <p>The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.</p>
             </details>
         </section>
+      </div>
     </main>
 
     <footer>
